@@ -1,13 +1,16 @@
 # 🚀 FaceTime with Stream
 
-Welcome to FaceTime with Stream, a modern video communication app powered by GetStream.io and secured with Clerk authentication.
+Welcome to FaceTime with Stream, a video communication app powered by GetStream.io.
 
 ![img.png](./public/img.png)
+
+## Demo
+
+Check out the live demo [here](https://facetime-on-stream.vercel.app/).
 
 ## 🌟 Key Features
 
 - **Real-time Video Communication**: Powered by GetStream.io for smooth, high-quality video calls.
-- **Secure Authentication**: User management and authentication handled by Clerk.
 - **Instant Meetings**: Create on-the-fly video sessions with a single click.
 - **Scheduled Calls**: Plan ahead with our calendar integration.
 - **Shareable Links**: Generate and share meeting links easily.
@@ -18,7 +21,7 @@ Before you begin, ensure you have the following:
 
 - Node.js (v14.x or higher)
 - npm (usually comes with Node.js)
-- [Clerk](https://clerk.com/) account for authentication
+- [Clerk](https://clerk.com/) account for auth
 - [GetStream.io](https://getstream.io/) account for video streaming
 
 ## 🚀 Getting Started
