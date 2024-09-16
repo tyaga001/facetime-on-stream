@@ -49,7 +49,7 @@ npm run dev
 
 Your FaceTime app should now be up and running at [http://localhost:3000](http://localhost:3000).
 
-![img2.png](img2.png)
+![img.png](img.png)
 
 ---
 
