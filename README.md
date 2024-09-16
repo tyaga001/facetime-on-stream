@@ -2,7 +2,7 @@
 
 Welcome to FaceTime with Stream, a modern video communication app powered by GetStream.io and secured with Clerk authentication.
 
-![img_2.png](img_2.png)
+![img.png](./public/img.png)
 
 ## 🌟 Key Features
 
@@ -107,7 +107,7 @@ I use Clerk for user auth. [Learn more about Clerk's API](https://clerk.com/docs
 
 All video calls are powered by GetStream.io. [Explore GetStream's video API](https://getstream.io/video/docs/).
 
-![img_1.png](img_1.png)
+![img_1.png](public/img_1.png)
 
 ## 🙏 Acknowledgements
 
