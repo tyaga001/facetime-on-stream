@@ -112,9 +112,7 @@ All video calls are powered by GetStream.io. [Explore GetStream's video API](htt
 ## 🙏 Acknowledgements
 
 - [GetStream.io](https://getstream.io/) for their excellent video streaming platform.
-- [Clerk](https://clerk.com/) for providing robust authentication services.
-- [Next.js](https://nextjs.org/) for the fantastic React framework.
-
+- [Clerk](https://clerk.com/) for providing an authentication services.
 ---
 
 Built with ❤️ by [Ankur Tyagi](https://theankurtyagi.com/)
