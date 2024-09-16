@@ -1,63 +1,120 @@
-## 🚀 Getting Started with FaceTime with Stream
+# 🚀 FaceTime with Stream
 
-Welcome to FaceTime app. Follow these steps to set up the project and get it running locally.
-
-### Prerequisites
-Before you begin, make sure you have:
-
-- **Node.js** installed (at least v14.x or higher).
-- A [Clerk](https://clerk.com/) account for user authentication.
-- A [GetStream.io](https://getstream.io/) account for real-time functionalities.
-
-### Step 1: Clone the Repository
-First, clone the project to your local machine:
-
-git clone https://github.com/your-repo/face-time-on-stream.git
-cd face-time-on-stream
-
-
-### Step 2: Install Dependencies
-Use the package manager `npm` to install all necessary dependencies:
-
-npm install
-
-### Step 3: Set up Authentication (Clerk)
-Create a [Clerk](https://clerk.com/) account and copy your API credentials into a **`.env`** file:
-
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your-clerk-publishable-key
-CLERK_SECRET_KEY=your-clerk-secret-key
-
-
-### Step 4: Set up Real-time Streaming (GetStream.io)
-Create a [GetStream.io](https://getstream.io/) account and retrieve your API credentials. Add them to the same **`.env`** file:
-
-STREAM_APP_ID=your-stream-app-id
-NEXT_PUBLIC_STREAM_API_KEY=your-stream-api-key
-STREAM_SECRET_KEY=your-stream-secret-key
-
-
-### Step 5: Add Environment Variables
-Add this environment variable to your **`.env`** file to configure the app’s hosting environment:
-
-NEXT_PUBLIC_FACETIME_HOST=http://localhost:3000/facetime
-
-
-### Step 6: Start the Development Server
-Finally, run the development server with the following command:
-
-npm run dev
-
-Your FaceTime app should now be up and running at [http://localhost:3000](http://localhost:3000).
+Welcome to FaceTime with Stream, a modern video communication app powered by GetStream.io and secured with Clerk authentication.
 
 ![img.png](img.png)
 
+## 🌟 Key Features
+
+- **Real-time Video Communication**: Powered by GetStream.io for smooth, high-quality video calls.
+- **Secure Authentication**: User management and authentication handled by Clerk.
+- **Instant Meetings**: Create on-the-fly video sessions with a single click.
+- **Scheduled Calls**: Plan ahead with our calendar integration.
+- **Shareable Links**: Generate and share meeting links easily.
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following:
+
+- Node.js (v14.x or higher)
+- npm (usually comes with Node.js)
+- [Clerk](https://clerk.com/) account for authentication
+- [GetStream.io](https://getstream.io/) account for video streaming
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/face-time-on-stream.git
+cd face-time-on-stream
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env.local` file in the root directory and add the following:
+
+```env
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+# GetStream.io
+STREAM_APP_ID=your_stream_app_id
+NEXT_PUBLIC_STREAM_API_KEY=your_stream_api_key
+STREAM_SECRET_KEY=your_stream_secret_key
+
+# App Configuration
+NEXT_PUBLIC_FACETIME_HOST=http://localhost:3000/facetime
+```
+
+Replace the placeholder values with your actual credentials.
+
+### 4. Run the Development Server
+
+```bash
+npm run dev
+```
+
+Your app should now be running at [http://localhost:3000](http://localhost:3000).
+
+## 🛠 Project Structure
+
+```
+face-time-on-stream/
+│
+├── src/
+│   ├── app/
+│   │   ├── modals/
+│   │   │   ├── CreateLink.tsx
+│   │   │   ├── InstantMeeting.tsx
+│   │   │   ├── JoinMeeting.tsx
+│   │   │   └── UpcomingMeeting.tsx
+│   │   │
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   │
+│   ├── hooks/
+│   │   └── []
+│   │
+│   └── lib/
+│       └── [util.ts]
+│
+├── public/
+│   └── stream-logo.png
+│
+├── .env.local
+├── next.config.js
+├── package.json
+└── README.md
+```
+
+## 📚 API Reference
+
+### Clerk Authentication
+
+I use Clerk for user auth. [Learn more about Clerk's API](https://clerk.com/docs/reference/clerkjs).
+
+### GetStream.io Video
+
+All video calls are powered by GetStream.io. [Explore GetStream's video API](https://getstream.io/video/docs/).
+
+![img_1.png](img_1.png)
+
+## 🙏 Acknowledgements
+
+- [GetStream.io](https://getstream.io/) for their excellent video streaming platform.
+- [Clerk](https://clerk.com/) for providing robust authentication services.
+- [Next.js](https://nextjs.org/) for the fantastic React framework.
+
 ---
 
-## 🎯 Key Features
-
-- Real-time video communication using GetStream.
-- User authentication and management via Clerk.
-- Simple and clean UI, making it easy to create and join video calls.
-
----
-
+Built with ❤️ by [Ankur Tyagi]
