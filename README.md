@@ -2,9 +2,11 @@
 
 Welcome to FaceTime with Stream, a video communication app powered by GetStream.io.
 
-![img.png](./public/img.png)
+![img.png](./public/getStream.png)
 
 ## Demo
+
+![img.png](./public/img.png)
 
 Check out the live demo [here](https://facetime-on-stream.vercel.app/).
 
@@ -115,7 +117,6 @@ All video calls are powered by GetStream.io. [Explore GetStream's video API](htt
 ## 🙏 Acknowledgements
 
 - [GetStream.io](https://getstream.io/) for their excellent video streaming platform.
-- [Clerk](https://clerk.com/) for providing an authentication services.
 ---
 
 Built with ❤️ by [Ankur Tyagi](https://theankurtyagi.com/)
