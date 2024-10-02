@@ -1,6 +1,6 @@
 # 🚀 FaceTime with Stream
 
-Welcome to FaceTime with Stream, a video communication app powered by GetStream.io.
+Welcome to FaceTime, a video communication app powered by GetStream.io.
 
 ![img.png](./public/getStream.png)
 
