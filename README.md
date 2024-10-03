@@ -2,6 +2,8 @@
 
 Welcome to FaceTime, a video communication app powered by GetStream.io.
 
+> **Check out the blog post on how I built this app [here](https://www.freecodecamp.org/news/how-i-built-a-custom-video-conferencing-app-with-stream-and-nextjs/).**
+
 ![img.png](./public/getStream.png)
 
 ## Demo
