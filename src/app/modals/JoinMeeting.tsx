@@ -58,11 +58,22 @@ export default function JoinMeeting({ enable, setEnable }: Props) {
 
 const MeetingForm = () => {
 	const [link, setLink] = useState<string>("");
+	const [isValidLink, setIsValidLink] = useState<boolean>(true);
 	const router = useRouter();
+
+	const validateLink = (link: string): boolean => {
+		const linkPattern = new RegExp(`^${process.env.NEXT_PUBLIC_FACETIME_HOST}/[a-zA-Z0-9-]+$`);
+		return linkPattern.test(link);
+	};
 
 	const handleStartMeeting = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		router.push(`${link}`);
+		if (validateLink(link)) {
+			setIsValidLink(true);
+			router.push(link);
+		} else {
+			setIsValidLink(false);
+		}
 	};
 
 	return (
@@ -75,21 +86,31 @@ const MeetingForm = () => {
 			</DialogTitle>
 
 			<form className='w-full' onSubmit={handleStartMeeting}>
-				<label
-					className='block text-left text-sm font-medium text-gray-700'
-					htmlFor='link'
-				>
-					Enter the FaceTime link
-				</label>
-				<input
-					type='url'
-					name='link'
-					id='link'
-					value={link}
-					onChange={(e) => setLink(e.target.value)}
-					className='mt-1 block w-full text-sm py-3 px-4 border-gray-200 border-[1px] rounded mb-3'
-					placeholder='Enter the FaceTime link'
-				/>
+				<div>
+					<label
+						className='block text-left text-sm font-medium text-gray-700'
+						htmlFor='link'
+					>
+						Enter the FaceTime link
+					</label>
+					<input
+						type='url'
+						name='link'
+						id='link'
+						value={link}
+						onChange={(e) => {
+							setLink(e.target.value);
+							setIsValidLink(true);
+						}}
+						className={`mt-1 block w-full text-sm py-3 px-4 border-[1px] rounded mb-1 ${
+							isValidLink ? 'border-gray-200' : 'border-red-500'
+						}`}
+						placeholder='Enter the FaceTime link'
+					/>
+					{!isValidLink && (
+						<p className="text-red-500 text-xs italic">Please enter a valid FaceTime link.</p>
+					)}
+				</div>
 
 				<button className='w-full bg-green-600 text-white py-3 rounded mt-4'>
 					Join now
